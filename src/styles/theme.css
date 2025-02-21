@@ -1,0 +1,34 @@
+/* theme.css */
+
+/* Variables de colores */
+:root {
+    --color-primary: #0C0C0C;
+    --color-secondary: #A7A7A7;
+    --color-accent: #1A2F2A;
+    --color-dark: #002410;
+    --color-gray: #606060;
+    --color-black: #151515;
+  
+    --font-main: 'Geist', sans-serif;
+  }
+  
+  /* Estilos generales */
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-main);
+    background-color: var(--color-primary);
+    color: white;
+  }
+  
+  h1, h2, h3 {
+    font-weight: bold;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
