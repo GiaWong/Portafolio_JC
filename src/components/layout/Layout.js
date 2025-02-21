@@ -1,17 +1,25 @@
-import Navbar from "./Navbar";
-import Footer from "./Footer";
+import "@/styles/theme.css";
+import "@/styles/components.css";
 
 export default function Layout({ children }) {
   return (
-    <div className="flex flex-col min-h-screen bg-[#0C0C0C] text-white">
-      {/* Barra de navegación */}
-      <Navbar />
-
-      {/* Contenido dinámico */}
-      <main className="flex-grow">{children}</main>
-
-      {/* Pie de página */}
-      <Footer />
+    <div>
+      <nav className="navbar">
+        <h2>Mi Portafolio</h2>
+        <ul>
+          <li><a href="/">Inicio</a></li>
+          <li><a href="/services">Servicios</a></li>
+          <li><a href="/contact">Contacto</a></li>
+        </ul>
+      </nav>
+      
+      <main className="container">
+        {children}
+      </main>
+      
+      <footer className="footer">
+        © 2025 Mi Portafolio - Todos los derechos reservados
+      </footer>
     </div>
   );
 }
