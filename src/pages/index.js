@@ -1,14 +1,17 @@
 import Head from "next/head";
-import Image from "next/image";
-import { Geist, Geist_Mono } from "next/font/google";
-import styles from "@/styles/Home.module.css";
-
+import Layout from "@/components/layout/Layout";
+import HeroSection from "@/components/layout/HeroSection";
 
 export default function Home() {
   return (
-    <div>
-      <h1>Firebase API Key:</h1>
-      <p>{process.env.NEXT_PUBLIC_FIREBASE_API_KEY}</p>
-    </div>
+    <Layout>
+      <Head>
+        <title>Mi Portafolio - Inicio</title>
+        <meta name="description" content="Portafolio profesional con diseño moderno" />
+      </Head>
+      
+      {/* Sección Hero */}
+      <HeroSection />
+    </Layout>
   );
 }
