@@ -3,7 +3,7 @@ import styles from '@/styles/Header.module.css';
 
 const Header = () => {
   return (
-    <header className={styles.header}>
+    <header id="inicioSection" className={styles.header}>
       <motion.div
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}

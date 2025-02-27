@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background: linear-gradient(to bottom, rgb(15, 28, 53), rgba(33, 77, 95, 0));
+  background: transparent; /* Para que usen el fondo global */
   color: #FFFFFF; /* Color del texto */
   text-align: center;
   position: relative;
@@ -29,3 +29,4 @@
     font-size: 1.5rem;
     margin-top: 1rem;
   }
+}

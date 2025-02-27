@@ -17,7 +17,9 @@
     margin: 0;
     padding: 0;
     font-family: var(--font-main);
-    background-color: var(--color-primary);
+    background: linear-gradient(to bottom, #061118, #0f4b59); /* Aplica el degradado */
+    background-attachment: fixed; /* Fija el degradado en la pantalla */
+    background-size: cover; /* Asegura que cubra todo */
     color: white;
   }
   

@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background: linear-gradient(to bottom, rgb(15, 28, 53), rgba(33, 77, 95, 0));
+    background: transparent; /* Para que usen el fondo global */
     color: #FFFFFF; /* Color del texto */
     text-align: center;
     position: relative;
@@ -27,7 +27,7 @@
     left: 0;
     width: 100%;
     height: 80px;
-    background: linear-gradient(to bottom, rgba(26, 47, 42, 1), rgba(0, 36, 16, 0));
+    
 }
 
 .projectsTitle {
@@ -78,4 +78,5 @@
 .reveal {
     opacity: 1;
     transform: translateY(0);
+}
 }

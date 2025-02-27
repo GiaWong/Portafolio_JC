@@ -22,10 +22,13 @@ body {
 
 body {
   color: var(--foreground);
-  background: #000000; /* Fondo negro en toda la página */
+  background: linear-gradient(to bottom, #061118, #0f4b59); /* Degradado en toda la página */
+  background-attachment: fixed; /* Mantiene el degradado fijo */
+  background-size: cover; /* Asegura que cubra todo el fondo */
   font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
 }
 
 *,
