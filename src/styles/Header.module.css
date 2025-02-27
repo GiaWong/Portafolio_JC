@@ -1,12 +1,21 @@
 .header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background-color: #0C0C0C; /* Color de fondo */
-    color: #FFFFFF; /* Color del texto */
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(to bottom, rgb(15, 28, 53), rgba(33, 77, 95, 0));
+  color: #FFFFFF; /* Color del texto */
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+
+  /* Full-bleed: extiende el fondo a todo el ancho del viewport */
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  width: 100vw;
   }
   
   .title {

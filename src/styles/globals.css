@@ -1,11 +1,11 @@
 :root {
-  --background: #ffffff;
+  --background: transparent; /* Permite que las secciones manejen su propio fondo */
   --foreground: #171717;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: transparent; /* También transparente en modo oscuro */
     --foreground: #ededed;
   }
 }
@@ -17,6 +17,15 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  min-height: 100vh; /* Asegura que cubra toda la pantalla */
+}
+
+body {
+  color: var(--foreground);
+  background: #000000; /* Fondo negro en toda la página */
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 *,
@@ -29,20 +38,6 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
 }
 
 a {
