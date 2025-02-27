@@ -1,4 +1,4 @@
-.contact-section {
+.contactSection {
   padding: 80px 20px;
   text-align: center;
   background: transparent;
@@ -10,13 +10,13 @@
   justify-content: center;
 }
 
-.section-title {
+.sectionTitle {
   font-size: 2.5rem;
   margin-bottom: 30px;
   color: #ffcc00;
 }
 
-.contact-grid {
+.contactGrid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 25px;
@@ -24,7 +24,7 @@
   width: 100%;
 }
 
-.contact-card {
+.contactCard {
   background: #151515;
   padding: 20px;
   border-radius: 15px;
@@ -39,16 +39,16 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.contact-card:hover {
+.contactCard:hover {
   transform: scale(1.1);
   box-shadow: 0 8px 20px rgba(255, 204, 0, 0.5);
 }
 
-.contact-icon {
+.contactIcon {
   font-size: 2.5rem;
   color: #ffcc00;
 }
 
-.contact-name {
+.contactName {
   font-weight: bold;
 }

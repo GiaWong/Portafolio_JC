@@ -20,7 +20,7 @@ export default function ContactSection() {
   return (
     <section id="contacto" className={styles.contactSection}>
       <motion.h2 
-        className="section-title"
+        className={styles.sectionTitle} // <--- Usa styles.sectionTitle
         initial={{ opacity: 0, y: -50 }} 
         animate={{ opacity: 1, y: 0 }} 
         transition={{ duration: 0.8 }}
@@ -29,7 +29,7 @@ export default function ContactSection() {
       </motion.h2>
 
       <motion.div 
-        className="contact-grid"
+        className={styles.contactGrid}
         initial={{ opacity: 0 }} 
         animate={{ opacity: 1 }} 
         transition={{ duration: 1 }}
@@ -40,12 +40,12 @@ export default function ContactSection() {
             href={contact.link} 
             target="_blank" 
             rel="noopener noreferrer"
-            className="contact-card"
+            className={styles.contactCard}
             whileHover={{ scale: 1.1, rotate: 5 }}
             whileTap={{ scale: 0.9 }}
           >
-            <span className="contact-icon">{contact.icon}</span>
-            <span className="contact-name">{contact.name}</span>
+            <span className={styles.contactIcon}>{contact.icon}</span>  {/* <--- Usa styles.contactIcon */}
+            <span className={styles.contactName}>{contact.name}</span>  {/* <--- Usa styles.contactName */}
           </motion.a>
         ))}
       </motion.div>

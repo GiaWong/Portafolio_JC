@@ -4,6 +4,7 @@ import AboutSection from "@/components/layout/AboutSection";
 import Header from "@/components/layout/Header";
 import ProjectsSection from "@/components/layout/ProjectsSection";
 import ContactSection from "@/components/layout/ContactSection";
+
 export default function Home() {
   return (
     <Layout>
@@ -13,22 +14,22 @@ export default function Home() {
       </Head>
 
       {/* Sección Hero */}
-      <section className="min-h-screen flex items-center justify-center bg-[#0C0C0C]">
+      <section className="h-screen flex items-center justify-center bg-[#0C0C0C]">
         <Header />
       </section>
 
       {/* Sección Sobre Mí */}
-      <section id="about" className="min-h-screen">
+      <section id="about">
         <AboutSection />
       </section>
 
       {/* Sección Proyectos */}
-      <section id="projects" className="min-h-screen">
+      <section id="projects">
         <ProjectsSection />
       </section>
 
       {/* Sección Contacto */}
-      <section id="contacto" className="min-h-screen">
+      <section id="contacto">
         <ContactSection />
       </section>
     </Layout>
