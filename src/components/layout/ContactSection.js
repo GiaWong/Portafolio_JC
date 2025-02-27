@@ -3,7 +3,8 @@ import {
   FaLinkedin, FaTiktok, FaWhatsapp, FaInstagram, 
   FaFacebook, FaEnvelope, FaPhone 
 } from "react-icons/fa";
-import "@/styles/ContactSection.css"; 
+import styles from "@/styles/ContactSection.module.css";
+
 
 const contacts = [
   { name: "LinkedIn", icon: <FaLinkedin />, link: "https://linkedin.com/in/tu-perfil" },
@@ -17,7 +18,7 @@ const contacts = [
 
 export default function ContactSection() {
   return (
-    <section id="contacto" className="contact-section">
+    <section id="contacto" className={styles.contactSection}>
       <motion.h2 
         className="section-title"
         initial={{ opacity: 0, y: -50 }} 
