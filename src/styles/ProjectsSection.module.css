@@ -1,22 +1,23 @@
 .projectsSection {
     display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  background: linear-gradient(to bottom, rgb(15, 28, 53), rgba(45, 105, 129, 0));
-  color: #FFFFFF;
-  text-align: center;
-  padding: 4rem 2rem;
-  position: relative;
-  overflow: hidden;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, rgb(15, 28, 53), rgba(33, 77, 95, 0));
+    color: #FFFFFF; /* Color del texto */
+    text-align: center;
+    position: relative;
+    width: 100%;
+    max-width: 100vw;
+    overflow: hidden;
+    padding: 2rem;
   
-  /* Full-bleed: extiende el fondo a todo el ancho del viewport */
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-  width: 100vw;
+  /* Ajuste responsivo para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .header {
+      padding: 1rem;
+    }
 }
 
 /* Efecto de transición con fade */
