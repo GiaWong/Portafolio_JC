@@ -1,0 +1,73 @@
+.projectsSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #002410;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 4rem 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Efecto de transición con fade */
+.transitionFade {
+    position: absolute;
+    top: -50px;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: linear-gradient(to bottom, rgba(26, 47, 42, 1), rgba(0, 36, 16, 0));
+}
+
+.projectsTitle {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.projectsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    width: 100%;
+}
+
+/* Animación de aparición de tarjetas */
+.projectCard {
+    background-color: #1A2F2A;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: left;
+    transition: transform 0.3s ease-in-out, opacity 0.5s ease-in-out;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.projectCard:hover {
+    transform: scale(1.05);
+}
+
+.projectTitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.projectDescription {
+    font-size: 1rem;
+    color: #A7A7A7;
+}
+
+/* Animaciones cuando entran en la vista */
+.reveal {
+    opacity: 1;
+    transform: translateY(0);
+}
