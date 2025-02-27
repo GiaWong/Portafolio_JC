@@ -3,7 +3,7 @@ import Layout from "@/components/layout/Layout";
 import AboutSection from "@/components/layout/AboutSection";
 import Header from "@/components/layout/Header";
 import ProjectsSection from "@/components/layout/ProjectsSection";
-
+import ContactSection from "@/components/layout/ContactSection";
 export default function Home() {
   return (
     <Layout>
@@ -20,7 +20,16 @@ export default function Home() {
       {/* Sección Sobre Mí */}
       <section id="about" className="min-h-screen">
         <AboutSection />
+      </section>
+
+      {/* Sección Proyectos */}
+      <section id="projects" className="min-h-screen">
         <ProjectsSection />
+      </section>
+
+      {/* Sección Contacto */}
+      <section id="contacto" className="min-h-screen">
+        <ContactSection />
       </section>
     </Layout>
   );
