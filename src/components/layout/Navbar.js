@@ -4,6 +4,7 @@ import { Link } from "react-scroll";
 const links = [
   { label: "Inicio", to: "inicioSection" },
   { label: "Quién soy", to: "aboutSection" },
+  { label: "Experiencia", to: "experience" },
   { label: "Proyectos", to: "projectsSection" },
   { label: "Contacto", to: "contacto" },
 ];

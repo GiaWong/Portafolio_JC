@@ -1,0 +1,86 @@
+.experienceSection {
+    padding: 4rem 2rem;
+    background-color: #0c0c0c; /* Puedes cambiar este color o usar un degradado */
+    color: white;
+    position: relative;
+  }
+  
+  .sectionTitle {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #ffcc00;
+  }
+  
+  .timeline {
+    position: relative;
+    margin: 0 auto;
+    padding: 2rem 0;
+    max-width: 800px;
+  }
+  
+  .timeline::before {
+    content: "";
+    position: absolute;
+    left: 20px;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: #ffcc00;
+  }
+  
+  .timelineItem {
+    position: relative;
+    margin-bottom: 2rem;
+    padding-left: 60px;
+  }
+  
+  .timelineItem:last-child {
+    margin-bottom: 0;
+  }
+  
+  .timelineItem::before {
+    content: "";
+    position: absolute;
+    left: 12px;
+    top: 0;
+    width: 16px;
+    height: 16px;
+    background: #0f4b59;
+    border: 4px solid #ffcc00;
+    border-radius: 50%;
+  }
+  
+  .timelineContent {
+    background: #1a2f2a;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .period {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #ffcc00;
+    margin-bottom: 0.5rem;
+  }
+  
+  .title {
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+  }
+  
+  .company {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: #a7a7a7;
+  }
+  
+  .description {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #d9d9d9;
+  }
+  

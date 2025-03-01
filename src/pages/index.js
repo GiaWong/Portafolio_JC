@@ -4,6 +4,7 @@ import AboutSection from "@/components/layout/AboutSection";
 import Header from "@/components/layout/Header";
 import ProjectsSection from "@/components/layout/ProjectsSection";
 import ContactSection from "@/components/layout/ContactSection";
+import Experience from "@/components/layout/Experience";
 
 export default function Home() {
   return (
@@ -21,6 +22,11 @@ export default function Home() {
       {/* Sección Sobre Mí */}
       <section id="about">
         <AboutSection />
+      </section>
+
+      {/* Sección Experiencia */}
+      <section id="experience">
+        <Experience />
       </section>
 
       {/* Sección Proyectos */}
