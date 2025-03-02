@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  min-height: 70vh;
   background: transparent; /* Para que usen el fondo global */
   color: #FFFFFF; /* Color del texto */
   text-align: center;
@@ -11,7 +11,7 @@
   width: 100%;
   max-width: 100vw;
   overflow: hidden;
-  padding: 2rem;
+  
 
   /* Ajuste responsivo para pantallas más pequeñas */
 @media (max-width: 768px) {

@@ -4,6 +4,9 @@
     color: white;
     position: relative;
     border-radius: 20px; /* Bordes redondeados */
+    min-height: auto;
+    padding: 4rem 1rem; /* Reduce espacios excesivos */
+    margin-bottom: clamp(2rem, 5vh, 4rem); /* Margen dinámico */
   }
   
   .sectionTitle {
