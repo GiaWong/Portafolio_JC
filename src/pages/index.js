@@ -2,7 +2,7 @@ import Head from "next/head";
 import Layout from "@/components/layout/Layout";
 import AboutSection from "@/components/layout/AboutSection";
 import Header from "@/components/layout/Header";
-import ProjectsSection from "@/components/layout/ProjectsSection";
+import ServiciosSection from "@/components/layout/ServiciosSection";
 import ContactSection from "@/components/layout/ContactSection";
 import Experience from "@/components/layout/Experience";
 
@@ -29,9 +29,9 @@ export default function Home() {
         <Experience />
       </section>
 
-      {/* Sección Proyectos */}
-      <section id="projects">
-        <ProjectsSection />
+      {/* Sección Servicios */}
+      <section id="serviciosSection">
+        <ServiciosSection />
       </section>
 
       {/* Sección Contacto */}
