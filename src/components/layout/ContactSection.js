@@ -1,19 +1,19 @@
 import { motion } from "framer-motion";
 import { 
   FaLinkedin, FaTiktok, FaWhatsapp, FaInstagram, 
-  FaFacebook, FaEnvelope, FaPhone 
+  FaFacebook, FaLink
 } from "react-icons/fa";
 import styles from "@/styles/ContactSection.module.css";
 
 
 const contacts = [
-  { name: "LinkedIn", icon: <FaLinkedin />, link: "https://linkedin.com/in/tu-perfil" },
-  { name: "TikTok", icon: <FaTiktok />, link: "https://tiktok.com/@tu-usuario" },
-  { name: "WhatsApp", icon: <FaWhatsapp />, link: "https://wa.me/tu-numero" },
-  { name: "Instagram", icon: <FaInstagram />, link: "https://instagram.com/tu-usuario" },
-  { name: "Facebook", icon: <FaFacebook />, link: "https://facebook.com/tu-perfil" },
-  { name: "Correo", icon: <FaEnvelope />, link: "mailto:tuemail@example.com" },
-  { name: "Teléfono", icon: <FaPhone />, link: "tel:+1234567890" },
+  { name: "LinkedIn", icon: <FaLinkedin />, link: "https://www.linkedin.com/in/juancarlos-sanchez-/" },
+  { name: "TikTok", icon: <FaTiktok />, link: "https://www.tiktok.com/@coddeguardiiaan" },
+  { name: "WhatsApp", icon: <FaWhatsapp />, link: "https://wa.me/1539056426" },
+  { name: "Instagram", icon: <FaInstagram />, link: "https://www.instagram.com/coddeguardiiaan" },
+  { name: "Facebook", icon: <FaFacebook />, link: "https://www.facebook.com/coddeguardiiaan/" },
+  { name: "Linktree", icon: <FaLink />, link: "https://linktr.ee/coddeguardiiaan" },
+  
 ];
 
 export default function ContactSection() {
