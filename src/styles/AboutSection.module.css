@@ -82,3 +82,14 @@
   transform: translateY(0);
 }
 }
+.contactLink {
+  color: #ecf1ef; /* Cambia este color a tu preferencia */
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.contactLink:hover {
+  color: #ffcc00; /* Color al pasar el mouse */
+  text-decoration: underline;
+}
