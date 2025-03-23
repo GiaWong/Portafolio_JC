@@ -18,9 +18,13 @@ export default function ServiciosSection() {
   }, []);
 
   const servicios = [
-    { title: "Servicio 1", description: "Descripción breve del servicio 1." },
-    { title: "Servicio 2", description: "Descripción breve del servicio 2." },
-    { title: "Servicio 3", description: "Descripción breve del servicio 3." },
+    { title: "Armado y reparación de PC, notebooks y televisores", description: "Servicio de ensamblado, mantenimiento y reparación de equipos de escritorio, laptops y televisores. Diagnóstico de fallas, cambio de componentes y optimización del rendimiento." },
+    { title: "Diagnóstico y reparación de placas de video.", description: "Análisis de fallos en tarjetas gráficas, reparación de circuitos, reballing y cambio de componentes dañados para restaurar su funcionamiento." },
+    { title: "Recuperación de datos y clonación de HDD.", description: "Rescate de archivos perdidos por fallos en discos duros o memorias extraíbles. Clonación de discos para migraciones seguras sin pérdida de información." },
+    { title: "Seguridad informática y configuración de redes.", description: "Implementación de medidas de seguridad para proteger sistemas y datos. Configuración de redes cableadas e inalámbricas para hogares y empresas." },
+    { title: "Desbloqueo y balanceo de baterías.", description: "Reactivación de baterías bloqueadas y calibración para mejorar su rendimiento y vida útil en notebooks y otros dispositivos electrónicos." },
+    { title: "Instalación de cámaras IP.", description: "Configuración y puesta en marcha de sistemas de videovigilancia IP para monitoreo remoto con acceso desde cualquier dispositivo." },
+    
   ];
 
   return (

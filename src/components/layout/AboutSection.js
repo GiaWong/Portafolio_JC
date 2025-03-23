@@ -34,13 +34,13 @@ export default function AboutSection() {
       <div className={`${styles.aboutTextContainer} ${isVisible ? styles.reveal : ""}`}>
         <h2 className={styles.aboutTitle}>Sobre Mí</h2>
         <p className={styles.aboutText}>
-          La seguridad digital no es un lujo, es una necesidad. <br />
-          Como experto en ciberseguridad, ayudo a empresas y profesionales a blindar su información y 
-          sistemas contra amenazas.
+          Soy un profesional con amplia experiencia en tecnología, 
+          ciberseguridad y redes informáticas.
         </p>
         <p className={styles.aboutText}>
-          Analizo, detecto y prevengo riesgos para que puedas enfocarte en 
-          lo que realmente importa: hacer crecer tu negocio sin preocupaciones.
+          Cuento con más de tres años 
+          de trayectoria en el ámbito de la informática, especializándome en 
+          la reparación de hardware, redes y seguridad informática.
         </p>
         <p className={styles.aboutText}>
           Si buscas tranquilidad y protección,{" "}
