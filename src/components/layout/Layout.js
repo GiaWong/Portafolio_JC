@@ -1,5 +1,5 @@
 import Navbar from "@/components/layout/Navbar"; 
-import BackgroundAnimation from "./BackgroundAnimation";
+import ParticlesBackground from "./ParticlesBackground";
 
 const Footer = () => (
   <footer className="footer">
@@ -11,7 +11,7 @@ export default function Layout({ children }) {
   return (
     <div>
       <Navbar /> 
-      <BackgroundAnimation />
+      <ParticlesBackground />
       <main className="container">{children}</main>
       <Footer />
     </div>

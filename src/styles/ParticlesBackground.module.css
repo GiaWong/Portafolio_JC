@@ -1,0 +1,10 @@
+.particlesWrapper {
+    position: fixed; /* Fijo para que siempre esté en el fondo */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1; /* Detrás de todo el contenido */
+    background: #0C0C0C; /* Color de fondo para asegurar contraste */
+  }
+  
