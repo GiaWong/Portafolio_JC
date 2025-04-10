@@ -51,6 +51,28 @@
   display: block; /* Mostrar cuando está activo */
 }
 
+/* Encabezado del menú lateral (para el botón de cerrar) */
+.nav-links-header {
+  display: flex;
+  justify-content: flex-end; /* Alinear a la derecha */
+  padding: 1.5rem; /* Espaciado desde los bordes */
+}
+
+/* Estilos para el botón de cerrar */
+.nav-links-close {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: color 0.3s, text-shadow 0.3s;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.8); /* Añade un resplandor blanco suave */
+}
+
+.nav-links-close:hover {
+  color: #ffcc00;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 1); /* Resplandor más intenso al pasar el mouse */
+}
+
 /* Estilos para la lista de enlaces */
 .nav-links-list {
   list-style: none;
@@ -76,7 +98,6 @@
 .nav-links a:hover {
   color: #ffcc00;
 }
-
 /* Footer */
 .footer {
   position: fixed;

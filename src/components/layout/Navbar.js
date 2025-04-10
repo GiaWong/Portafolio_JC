@@ -37,11 +37,11 @@ export default function Navbar() {
       {/* Menú lateral para todas las pantallas */}
       {menuOpen && (
         <div className={`nav-links ${menuOpen ? 'active' : ''}`}>
-          <div className="flex justify-end p-6">
+          <div className="nav-links-header">
             <button
               onClick={() => setMenuOpen(false)}
               aria-label="Cerrar menú"
-              className="text-white focus:outline-none hover:text-purple-300 transition-colors"
+              className="nav-links-close"
             >
               <X size={28} />
             </button>
