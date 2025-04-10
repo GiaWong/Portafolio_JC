@@ -4,13 +4,13 @@
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #0f4b59;
+  background-color: transparent; /* Fondo transparente */
+  backdrop-filter: blur(1px); /* Efecto de desenfoque */
   padding: 15px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 1000;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 /* Contenedor de la navbar */
@@ -23,11 +23,46 @@
   align-items: center;
 }
 
-/* Estilos de los enlaces */
+/* Estilos para el botón hamburguesa (visible en todas las pantallas) */
+.navbar-toggle {
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: white;
+  transition: color 0.3s;
+}
+
+.navbar-toggle:hover {
+  color: #ffcc00;
+}
+
+/* Estilos del menú lateral */
 .nav-links {
+  display: none; /* Oculto por defecto */
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.95); /* Fondo oscuro semi-transparente */
+  z-index: 1000;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-links.active {
+  display: block; /* Mostrar cuando está activo */
+}
+
+/* Estilos para la lista de enlaces */
+.nav-links-list {
   list-style: none;
   display: flex;
-  gap: 20px;
+  flex-direction: column;
+  align-items: center; /* Centrado horizontal */
+  justify-content: center; /* Centrado vertical */
+  gap: 2rem; /* Espaciado entre enlaces */
+  height: 80vh; /* Altura para centrar verticalmente */
+  text-align: center; /* Asegurar centrado del texto */
+  font-size: 1.5rem; /* Tamaño de texto similar al de la página de referencia */
+  font-weight: 500;
 }
 
 .nav-links a {
@@ -40,39 +75,6 @@
 
 .nav-links a:hover {
   color: #ffcc00;
-}
-
-/* Estilos para el botón hamburguesa (solo en móviles) */
-.navbar-toggle {
-  display: none;
-  background: none;
-  border: none;
-  font-size: 28px;
-  cursor: pointer;
-  color: white;
-}
-
-/* Estilos responsive */
-@media (max-width: 768px) {
-  .navbar-toggle {
-    display: block; /* Aparece solo en móviles */
-  }
-
-  .nav-links {
-    display: none; /* Oculta los enlaces en móviles */
-    flex-direction: column;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    width: 100%;
-    background-color: #0f4b59;
-    padding: 20px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-  }
-
-  .nav-links.active {
-    display: flex; /* Muestra los enlaces cuando se activa */
-  }
 }
 
 /* Footer */
