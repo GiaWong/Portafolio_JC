@@ -5,7 +5,8 @@ import Header from "@/components/layout/Header";
 import ServiciosSection from "@/components/layout/ServiciosSection";
 import ContactSection from "@/components/layout/ContactSection";
 import Experience from "@/components/layout/Experience";
-import FormacionClientesSection from "@/components/layout/FormacionClientesSection";
+import ClientesDestacadosSection from "@/components/layout/ClientesDestacadosSection";
+import FormacionAcademicaSection from "@/components/layout/FormacionAcademicaSection";
 
 export default function Home() {
   return (
@@ -25,14 +26,19 @@ export default function Home() {
         <AboutSection />
       </section>
 
+      {/* Sección FormacionAcademica */}
+      <section id="FormacionAcademica">
+       <FormacionAcademicaSection />
+      </section>
+
       {/* Sección Experiencia */}
       <section id="experience">
         <Experience />
       </section>
 
-      {/* Sección FormacionClientes */}
-       <section id="formacion">
-       <FormacionClientesSection />
+      {/* Sección clientesDestacados */}
+      <section id="clientesDestacados">
+        <ClientesDestacadosSection />
       </section>
       
 

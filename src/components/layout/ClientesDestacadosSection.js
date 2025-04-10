@@ -1,12 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import styles from "@/styles/FormacionClientes.module.css";
-
-const formaciones = [
-  { titulo: "Certified Ethical Hacker (CEH)", institucion: "EC-Council", año: 2023 },
-  { titulo: "Google Cybersecurity Certificate", institucion: "Google", año: 2022 },
-  { titulo: "Especialización en Seguridad Informática", institucion: "FIUBA", año: 2021 },
-];
+import styles from "@/styles/ClientesDestacados.module.css";
 
 const clientes = [
   { 
@@ -36,33 +30,11 @@ const clientes = [
   }
 ];
 
-export default function FormacionClientesSection() {
+export default function ClientesDestacadosSection() {
   const [clienteSeleccionado, setClienteSeleccionado] = useState(null);
 
   return (
-    <section id="formacion" className={styles.section}>
-      
-      {/* Sección de Formación y Certificaciones */}
-      <motion.div 
-        className={styles.formacionContainer} 
-        initial={{ opacity: 0, y: -50 }} 
-        animate={{ opacity: 1, y: 0 }} 
-        transition={{ duration: 0.8 }}
-      >
-        <h2 className={styles.sectionTitle}>Formación y Certificaciones</h2>
-        <ul className={styles.listaFormaciones}>
-          {formaciones.map((item, index) => (
-            <motion.li 
-              key={index} 
-              className={styles.formacionItem}
-              whileHover={{ scale: 1.05 }}
-            >
-              <strong>{item.titulo}</strong> - {item.institucion} ({item.año})
-            </motion.li>
-          ))}
-        </ul>
-      </motion.div>
-
+    <section id="clientesDestacados" className={styles.section}>
       {/* Sección de Clientes Destacados */}
       <motion.div 
         className={styles.clientesContainer} 
@@ -76,16 +48,16 @@ export default function FormacionClientesSection() {
             <motion.div 
               key={index} 
               className={styles.clienteCard}
-              whileHover={{ scale: 1.1 }}
+              whileHover={{ scale: 1.05 }}
+              onClick={() => setClienteSeleccionado(cliente)}
             >
               <img src={cliente.logo} alt={cliente.nombre} className={styles.clienteLogo} />
-              <p className={styles.clienteNombre}>{cliente.nombre}</p>
-              <button 
-                className={styles.verMasButton} 
-                onClick={() => setClienteSeleccionado(cliente)}
-              >
-                Ver más información
-              </button>
+              <h3 className={styles.clienteNombre}>{cliente.nombre}</h3>
+              <p className={styles.clienteDescripcion}>
+                {cliente.descripcion.length > 100 
+                  ? `${cliente.descripcion.substring(0, 100)}...` 
+                  : cliente.descripcion}
+              </p>
             </motion.div>
           ))}
         </div>
@@ -98,12 +70,14 @@ export default function FormacionClientesSection() {
           initial={{ opacity: 0 }} 
           animate={{ opacity: 1 }} 
           exit={{ opacity: 0 }}
+          onClick={() => setClienteSeleccionado(null)}
         >
           <motion.div 
             className={styles.modalContent} 
             initial={{ y: -50, opacity: 0 }} 
             animate={{ y: 0, opacity: 1 }} 
             transition={{ duration: 0.3 }}
+            onClick={(e) => e.stopPropagation()}
           >
             <h2>{clienteSeleccionado.nombre}</h2>
             <p>{clienteSeleccionado.descripcion}</p>
