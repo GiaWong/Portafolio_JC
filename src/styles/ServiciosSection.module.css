@@ -31,18 +31,19 @@
     }
   
     .serviciosWrapper {
-      border-radius: 20px; /* Esquinas un poco menos redondeadas en pantallas pequeñas */
+      border-radius: 60px; /* Esquinas un poco menos redondeadas en pantallas pequeñas */
       padding: 2rem 1rem;
     }
   }
   
   .serviciosTitle {
-    font-size: 3rem;
+    font-size: 2.5rem;
+    color: #ffffff;
     font-weight: 700;
-    color: #ffffff; /* Dorado elegante */
-    margin-bottom: 3rem;
-    font-family: 'Playfair Display', serif; /* Fuente elegante para el título */
     position: relative;
+    text-align: center;
+    margin-bottom: 3rem;
+    display: inline-block;
   }
   
   .serviciosTitle::after {
