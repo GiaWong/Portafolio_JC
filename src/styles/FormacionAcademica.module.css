@@ -23,7 +23,7 @@
     transform: translateX(-50%);
     width: 50px;
     height: 3px;
-    background-color: #00C4B4; /* Línea decorativa turquesa */
+    background-color: #061118; /* Línea decorativa turquesa */
   }
   
   /* Contenedor de Formación */
@@ -55,7 +55,7 @@
   }
   
   .formacionCard:hover {
-    background: #00C4B4; /* Cambio de color al hacer hover */
+    background: #39607a; /* Cambio de color al hacer hover */
     transform: scale(1.05);
   }
   

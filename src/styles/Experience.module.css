@@ -13,7 +13,7 @@
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 3rem;
-    color: #ffcc00;
+    color: #ffffff;
   }
   
   .timeline {
@@ -61,13 +61,13 @@
     top: 0;
     width: 16px;
     height: 16px;
-    background: #0f4b59;
+    background: #1e3341;
     border: 4px solid #ffcc00;
     border-radius: 50%;
   }
   
   .timelineContent {
-    background: #1a2f2a;
+    background: #1e3341;
     padding: 1rem 1.5rem;
     border-radius: 12px; /* Bordes redondeados */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);

@@ -14,7 +14,7 @@
 .sectionTitle {
   font-size: 2.5rem;
   margin-bottom: 30px;
-  color: #ffcc00;
+  color: #ffffff;
 }
 
 .contactGrid {
@@ -36,13 +36,13 @@
   flex-direction: column;
   align-items: center;
   gap: 10px;
-  box-shadow: 0 5px 15px rgba(255, 204, 0, 0.3);
+  box-shadow: 0 5px 15px rgba(40, 124, 194, 0.3);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .contactCard:hover {
   transform: scale(1.1);
-  box-shadow: 0 8px 20px rgba(255, 204, 0, 0.5);
+  box-shadow: 0 8px 20px rgba(36, 76, 114, 0.5);
 }
 
 .contactIcon {

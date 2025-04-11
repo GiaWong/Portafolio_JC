@@ -39,7 +39,7 @@
   .serviciosTitle {
     font-size: 3rem;
     font-weight: 700;
-    color: #FFD700; /* Dorado elegante */
+    color: #ffffff; /* Dorado elegante */
     margin-bottom: 3rem;
     font-family: 'Playfair Display', serif; /* Fuente elegante para el título */
     position: relative;
@@ -70,7 +70,7 @@
   .serviciosCard {
     background: rgba(20, 20, 20, 0.9); /* Fondo oscuro con transparencia */
     backdrop-filter: blur(10px); /* Efecto de vidrio esmerilado */
-    border: 1px solid rgba(255, 215, 0, 0.2); /* Borde dorado sutil */
+    border: 1px solid rgba(21, 54, 116, 0.2); /* Borde dorado sutil */
     border-radius: 20px;
     padding: 2rem;
     text-align: center;
@@ -90,7 +90,7 @@
     background: linear-gradient(
       90deg,
       transparent,
-      rgba(255, 215, 0, 0.2),
+      rgba(48, 66, 90, 0.2),
       transparent
     );
     transition: 0.5s;
@@ -102,15 +102,15 @@
   
   .serviciosCard:hover {
     transform: scale(1.05);
-    box-shadow: 0 10px 30px rgba(255, 215, 0, 0.2); /* Sombra dorada al hacer hover */
-    border-color: rgba(255, 215, 0, 0.5); /* Borde dorado más visible */
+    box-shadow: 0 10px 30px rgba(17, 36, 78, 0.2); /* Sombra dorada al hacer hover */
+    border-color: rgba(105, 170, 212, 0.5); /* Borde dorado más visible */
   }
   
   /* Estilo de título de tarjeta */
   .serviciosCardTitle {
     font-size: 1.8rem;
     font-weight: 600;
-    color: #FFD700; /* Dorado */
+    color: #dfc222; /* Dorado */
     margin-bottom: 1rem;
     font-family: 'Playfair Display', serif;
   }
