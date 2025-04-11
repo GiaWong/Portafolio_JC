@@ -1,7 +1,7 @@
 .section {
   padding: 4rem 1rem;
   text-align: center;
-  background-color: #0D0D0D; /* Fondo oscuro similar al de la página */
+  background-color:transparent;; /* Fondo transparente */
 }
 
 .sectionTitle {

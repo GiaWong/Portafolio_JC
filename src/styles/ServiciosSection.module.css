@@ -3,102 +3,122 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: auto; /* Permite que el contenido determine la altura */
-    background:transparent;
-    color: #FFFFFF; 
+    min-height: 100vh;
+    color: #E5E5E5;
     text-align: center;
     position: relative;
     width: 100%;
-    max-width: auto;
+    padding: 4rem 2rem;
     overflow: hidden;
-    padding: 1rem;
-}
-
-/* Ajuste responsivo para pantallas más pequeñas */
-@media (max-width: 768px) {
-    .serviciosSection {
-        padding: 1rem;
-    }
-}
-
-/* Efecto de transición con fade */
-.transitionFade {
-    position: absolute;
-    top: -50px;
-    left: 0;
+    margin-bottom: clamp(2rem, 5vh, 4rem); /* Margen dinámico */
+  }
+  
+  /* Contenedor del fondo con esquinas redondeadas */
+  .serviciosWrapper {
+    background:#151515; /*linear-gradient(135deg, #0A0A0A, #1A1A1A);*/ /* Fondo degradado oscuro */
+    border-radius: 60px; /* Esquinas más redondeadas */
     width: 100%;
-    height: 80px;
-}
-
-.serviciosTitle {
-    font-size: 2.8rem;
-    font-weight: bold;
-    margin-bottom: 1.5rem;
-    opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-}
-
-/* Grid dinámico */
-.serviciosGrid {
+    max-width: 1300px; /* Limita el ancho máximo */
+    padding: 3rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Sombra para profundidad */
+  }
+  
+  /* Ajuste responsivo para pantallas más pequeñas */
+  @media (max-width: 768px) {
+    .serviciosSection {
+      padding: 2rem 1rem;
+      min-height: auto;
+    }
+  
+    .serviciosWrapper {
+      border-radius: 20px; /* Esquinas un poco menos redondeadas en pantallas pequeñas */
+      padding: 2rem 1rem;
+    }
+  }
+  
+  .serviciosTitle {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #FFD700; /* Dorado elegante */
+    margin-bottom: 3rem;
+    font-family: 'Playfair Display', serif; /* Fuente elegante para el título */
+    position: relative;
+  }
+  
+  .serviciosTitle::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 2px;
+    background: #FFD700; /* Línea decorativa dorada */
+  }
+  
+  /* Grid dinámico */
+  .serviciosGrid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
     max-width: 1200px;
     width: 100%;
-    padding-top: 1rem;
-}
-
-/* Animación de aparición con efecto de elevación */
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(40px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* Tarjetas animadas */
-.serviciosCard {
-    background: linear-gradient(135deg, #162823, #1A2F2A);
-    border-radius: 16px;
-    padding: 1.8rem;
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
-    text-align: left;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeInUp 0.8s ease-out forwards;
-    padding: 4rem 1rem; /* Reduce espacios excesivos */
-    margin-bottom: clamp(2rem, 5vh, 4rem); /* Margen dinámico */
-}
-
-/* Efecto de hover con elevación y brillo */
-.serviciosCard:hover {
-    transform: scale(1.07);
-    box-shadow: 0px 12px 25px #ffcc00;
-}
-
-/* Estilo de título de tarjeta */
-.serviciosCardTitle {
-    font-size: 1.6rem;
-    font-weight: bold;
-    color: #FFCC00;
-    margin-bottom: 0.5rem;
-}
-
-/* Descripción con un ligero degradado */
-.serviciosDescription {
+    padding: 1rem;
+  }
+  
+  /* Tarjetas */
+  .serviciosCard {
+    background: rgba(20, 20, 20, 0.9); /* Fondo oscuro con transparencia */
+    backdrop-filter: blur(10px); /* Efecto de vidrio esmerilado */
+    border: 1px solid rgba(255, 215, 0, 0.2); /* Borde dorado sutil */
+    border-radius: 20px;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Efecto de brillo al hacer hover */
+  .serviciosCard::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(255, 215, 0, 0.2),
+      transparent
+    );
+    transition: 0.5s;
+  }
+  
+  .serviciosCard:hover::before {
+    left: 100%;
+  }
+  
+  .serviciosCard:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(255, 215, 0, 0.2); /* Sombra dorada al hacer hover */
+    border-color: rgba(255, 215, 0, 0.5); /* Borde dorado más visible */
+  }
+  
+  /* Estilo de título de tarjeta */
+  .serviciosCardTitle {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #FFD700; /* Dorado */
+    margin-bottom: 1rem;
+    font-family: 'Playfair Display', serif;
+  }
+  
+  /* Descripción */
+  .serviciosDescription {
     font-size: 1rem;
-    color: #C0C0C0;
-    line-height: 1.5;
-}
-
-/* Animación cuando entran en la vista */
-.reveal {
-    opacity: 1;
-    transform: translateY(0);
-}
+    color: #E5E5E5; /* Blanco suave */
+    line-height: 1.6;
+    font-family: 'Inter', sans-serif; /* Fuente moderna para el texto */
+  }
